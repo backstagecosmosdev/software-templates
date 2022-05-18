@@ -85,6 +85,7 @@ spec:
         # here's where the secret can be used
         token: ${{ secrets.USER_OAUTH_TOKEN }}
         gitAuthorName: ${{ user.entity.metadata.name }}
+        gitAuthorEmail: ${{ user.entity.metadata.email }}
 
     - id: register
       name: Register
